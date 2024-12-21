@@ -51,12 +51,34 @@ pip freeze > requirements.txt
 
 # Apply database migrations
 python manage.py makemigrations  
-
-# Create a superuser to access the Django admin interface
-python manage.py createsuperuser  
 ```
 
 #### Chapter 2: Creating models and serializers
+```
+# Create a superuser to access the Django admin interface
+python manage.py createsuperuser  
+
+# Start the development server
+python manage.py runserver  
+
+#Docs about serializers
+https://www.django-rest-framework.org/api-guide/serializers/
+
+# Testing the models in Django Shell
+>>> from escola.models import Estudante
+#Before import EstudanteSerializer,I had to setup the python path
+export PYTHONPATH=$PYTHONPATH:/Users/viniciusmoreira/Projects/courses/alura/escola
+>>> from escola.serializers import EstudanteSerializer
+>>> queryset = Estudante.objects.all()
+>>> queryset
+<QuerySet [<Estudante: Vini>, <Estudante: Mari>]>
+>>> serializador = EstudanteSerializer(queryset, many=True)
+>>> serializador.data
+serializador.data
+>>> serializador.data
+[{'id': 1, 'nome': 'Vini', 'email': 'vini@vini.com', 'cpf': '22222222222', 'data_nascimento': '1989-10-02', 'numero_celular': '219999999999'}, {'id': 2, 'nome': 'Mari', 'email': 'mari@mari.com', 'cpf': '11111111111', 'data_nascimento': '1991-01-01', 'numero_celular': '21988888888'}]
+>>> 
+```
 
 
-Sinta-se à vontade para explorar, sugerir melhorias e compartilhar ideias! 😊
+Feel free to explore, suggest improvements, and share ideas! 😊
