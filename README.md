@@ -54,7 +54,6 @@ python manage.py makemigrations
 ```
 
 #### Chapter 2: Creating models and serializers
-```
 # Create a superuser to access the Django admin interface
 python manage.py createsuperuser  
 
@@ -79,6 +78,9 @@ serializador.data
 [{'id': 1, 'nome': 'Vini', 'email': 'vini@vini.com', 'cpf': '22222222222', 'data_nascimento': '1989-10-02', 'numero_celular': '219999999999'}, {'id': 2, 'nome': 'Mari', 'email': 'mari@mari.com', 'cpf': '11111111111', 'data_nascimento': '1991-01-01', 'numero_celular': '21988888888'}]
 >>> 
 ```
+
+#### Chapter 3: Working with viewsets
+# In this chapter we created some routes for students and courses
 
 
 Feel free to explore, suggest improvements, and share ideas! 😊
