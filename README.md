@@ -86,6 +86,6 @@ serializador.data
 # In this chapter we added registration's viewset, serializer, route and admin page
 
 #### Chapter 5: Adding Authentication
-# In this chapter we added authentication and permissions to resources
+# In this chapter we added authentication and permissions to resources, and to the main API page
 
 Feel free to explore, suggest improvements, and share ideas! 😊
