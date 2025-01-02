@@ -82,5 +82,10 @@ serializador.data
 #### Chapter 3: Working with viewsets
 # In this chapter we created some routes for students and courses
 
+#### Chapter 4: Adding resources to the API
+# In this chapter we added registration's viewset, serializer, route and admin page
+
+#### Chapter 5: Adding Authentication
+# In this chapter we added authentication and permissions to resources
 
 Feel free to explore, suggest improvements, and share ideas! 😊
